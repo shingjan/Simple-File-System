@@ -11,4 +11,16 @@
 
 int main(int argc, char *argv[])
 {
+	int db = open (argv[1], O_RDWR, 660);
+	if (db == -1)
+	{
+		print("This should be a HD file.\n");
+		return -1;
+	}
+
+
+
+	//if database is finished establishing
+	printf("File system is established!.\n");
+	return 0;
 }

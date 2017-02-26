@@ -14,10 +14,12 @@ int main(int argc, char *argv[])
 	int fd = open (argv[1], O_RDWR, 660);
 	if (fd == -1)
 	{
-		printf("No such file. Exit.\n");
+		printf("HD file doesn't exist. Please try again.\n");
 		return -1;
 	}
-	//0-512:BOOT, 512-4K:superblock, 4K-10M:inode, 10M-110M:data
+
+	//index from requirement
+	//0-4k:BOOT, 4k-8K:superblock, 8K-8M:inode, 8M-88M:data
 
 	struct superblock* sb;
 	struct inode* inode;

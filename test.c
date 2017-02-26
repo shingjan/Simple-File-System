@@ -15,4 +15,4 @@ int main(){
 	int bytes = write(fd, buffer, 4*sizeof(char));
 	printf("this is the fd: %d and bytes is: %d \n",fd,bytes);
 	printf("%c \n",buffer[0]);
-}
+}				

@@ -1,4 +1,3 @@
-#include <fcntl.h>
 #include <string.h>
 #include <sys/stat.h>
 #include <sys/types.h>
@@ -48,7 +47,7 @@ int main(int argc, char *argv[])
 	inode->direct_blk[0] = 0;
 	inode->direct_blk[1] = -1;
 	inode->indirect_blk = -1;
-	inode->file_num = 0; //for now its 0
+	inode->file_num = 0;
 	//write
 	lseek(fd, INODE_OFFSET, SEEK_SET); //point to INODE_OFFSET
 	write(fd, (void *)inode, sizeof(struct inode));

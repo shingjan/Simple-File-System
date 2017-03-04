@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <fcntl.h>
+#include "open2.h"
 
 int main(){
 	int fd = open("sht", O_WRONLY);

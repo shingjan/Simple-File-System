@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <time.h>
+#include "sfs.h"
 
 int open_t( const char *pathname, int flags);
 struct superblock getSuperBlock();

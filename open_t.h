@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <time.h>
+#include "sfs.h"
 
 int open_t(const char *path, int flags)
 
@@ -22,6 +23,10 @@ int open_t(const char *path, int flags){
 		{
 			if(strcmp(token,"") != 0){
 				strcpy(tokenList[depth++], token);
+			}
+		}
 	
-
+	}
+//--------------------and then look up for the path---------------------//
+	
 }

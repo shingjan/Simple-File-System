@@ -16,6 +16,8 @@ int open_t(const char *path, int flags){
 	char* cmd;
 	char tokenList[11][509];
 	int depth;
+	int inodeNum = 0;
+	int fd = open ("HD", O_RDWR, 660);
 //--------------------separate the command first------------------------//
 	while((token = strsep(&cmd, "/")) != NULL)
 	{	

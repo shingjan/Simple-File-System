@@ -10,6 +10,7 @@
 #include "write_t.h"
 #include "read_t.h"
 
+
 int main(){
 	int fd = open_t("sht", O_WRONLY);
 

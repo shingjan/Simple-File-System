@@ -6,12 +6,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <fcntl.h>
-#include "open2.h"
-#include "write_t.h"
+#include <time.h>
+#include "sfsheader.h"
+#include "open_t.h"
 #include "read_t.h"
+#include "write_t.h"
+int main()
+{
+    open_t("/sth",0);
 
-
-int main(){
-	int fd = open_t("sht", O_WRONLY);
 
 }

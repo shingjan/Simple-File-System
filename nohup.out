@@ -1,1 +1,0 @@
-time="2017-03-04T16:41:13.717240088+08:00" level=fatal msg="Error starting daemon: pid file found, ensure docker is not running or delete /var/run/docker.pid" 

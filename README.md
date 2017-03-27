@@ -4,7 +4,9 @@ This is a simple file system with three basic system call implemented
 1. open_t
 2. write_t
 3. read_t
+
 and some other necessary function calls to complete a shell with the following commands:
+
 1. mkdir_t
 2. cd_t
 3. ls_t
